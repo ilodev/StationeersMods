@@ -22,7 +22,7 @@ namespace StationeersMods.Editor
 
         public override List<string> GetCandidates(ExportSettings settings)
         {
-            if (_candidatesCache == null || _candidatesCache.Count == 0 )
+            if (_candidatesCache == null)
                 _candidatesCache = AssetUtility.GetAssets("t:AssemblyDefinitionAsset").ToList(); 
             return _candidatesCache;
         }
@@ -34,7 +34,7 @@ namespace StationeersMods.Editor
 
         public void ClearCandidates()
         {
-            _candidatesCache.Clear();
+            _candidatesCache = null;
         }
     }
 }
