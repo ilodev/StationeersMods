@@ -72,6 +72,14 @@ namespace StationeersMods.Editor
             exportEditor = new ExportEditor();
         }
 
+        /// <summary>
+        /// Used to force refreshing the cached list of assemblies
+        /// </summary>
+        private void OnProjectChange()
+        {
+            assemblyEditor.ClearCandidates();
+        }
+        
         private void OnDisable()
         {
             DestroyImmediate(exportSettingsEditor);
