@@ -10,7 +10,7 @@ If you are here to download the latest release for your gameplay you need the fo
 
 ### Installation
 
-https://github.com/ilodev/StationeersMods/
+Download the latest release from [Releases](https://github.com/ilodev/StationeersMods/releases)
 
 If you have questions you can ask them on [Discord](https://discord.gg/5qZbPVTw2U).
 
