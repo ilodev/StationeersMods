@@ -1,5 +1,5 @@
 
-[![Image](doc/discord_button.png)](https://discord.gg/AEmQR3XCGm)
+[![Image](doc/discord_button.png)](https://discord.gg/5qZbPVTw2U)
 
 # StationeersMods
 
@@ -10,9 +10,9 @@ If you are here to download the latest release for your gameplay you need the fo
 
 ### Installation
 
-https://jixxed.github.io/StationeersMods/
+https://github.com/ilodev/StationeersMods/
 
-If you have questions you can ask them on [Discord](https://discord.gg/AEmQR3XCGm).
+If you have questions you can ask them on [Discord](https://discord.gg/5qZbPVTw2U).
 
 ## Mod Development
 
@@ -26,7 +26,7 @@ for both the unity and simple mods, tutorials and examples are provided in the d
 ### Manual project setup for unity mod (doc guide and example preferred, so only continue reading if you really want to)
 
 To create mods in unity you can use the StationeersMods Exporter.
-- Download the latest `StationeersMods-exporter.zip` from [Releases](https://github.com/jixxed/StationeersMods/releases)
+- Download the latest `StationeersMods-exporter.zip` from [Releases](https://github.com/ilodev/StationeersMods/releases)
 - copy `Assets/` from the zip to your Unity project
 - Check that a `StationeersMods` menu has appeared in the Unity editor.
 
@@ -133,3 +133,8 @@ Installing assetmods are as easy as dropping them into your `%userprofile%\Docum
 ## Building this solution
 
 If you are going to build the solution, be sure to look at `StationeersMods.VS.props`, setting those two properties will make it so the package builds without having to track down all of the dependencies manually (In Visual Studio)
+
+## Credits
+
+- [Jixxed](https://github.com/jixxed) created and maintained the original version of this repository.
+- Multiple other contributors can be found in the commit history.
