@@ -19,13 +19,17 @@ namespace StationeersMods.Editor
         /// <returns>The directory where ModTool is located.</returns>
         public static string GetModToolDirectory()
         {
-            var location = typeof(ModInfo).Assembly.Location;
+            var location = typeof(ModInfo).Assembly.Location; 
 
             var modToolDirectory = Path.GetDirectoryName(location);
 
             if (!Directory.Exists(modToolDirectory))
                 modToolDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Assets");
 
+            // Fallback to Assets in the exporter is installed as a package the editor 
+            if (modToolDirectory.Contains("PackageCache"))
+                modToolDirectory = Application.dataPath;
+            
             return GetRelativePath(modToolDirectory);
         }
 
