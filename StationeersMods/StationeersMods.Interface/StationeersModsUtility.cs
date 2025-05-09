@@ -33,11 +33,18 @@ namespace StationeersMods.Interface
             return (Material) Resources.Load("Objects/Models/Materials/" + materialName, typeof(Material));
         }
 
-        public static Material[] GetBlueprintMaterials(int size)
+        public static Material[] GetBlueprintMaterials(int size) 
         {
-            var blueprintMaterial = FindPrefab("StructureFrame").Blueprint.GetComponent<MeshRenderer>().materials[0];
-            var materials = new Material[size];
-            Array.Fill(materials, blueprintMaterial, 0, size);
+            private Material _blueprintMaterial = null;
+            foreach (Thing prefab in WorldManager.Instance.SourcePrefabs)
+            {
+                _blueprintMaterial = prefab?.Blueprint?.GetComponent<MeshRenderer>()?.materials?[0];
+                if (_blueprintMaterial != null)
+                    break;
+            }
+            Material[] materials = new Material[size];
+            for (int i = 0; i < size; i++)
+                materials[i] = _blueprintMaterial;
             return materials;
         }
 
