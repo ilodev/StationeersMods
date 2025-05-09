@@ -26,9 +26,16 @@ for both the unity and simple mods, tutorials and examples are provided in the d
 ### Manual project setup for unity mod (doc guide and example preferred, so only continue reading if you really want to)
 
 To create mods in unity you can use the StationeersMods Exporter.
-- Download the latest `StationeersMods-exporter.zip` from [Releases](https://github.com/ilodev/StationeersMods/releases)
-- copy `Assets/` from the zip to your Unity project
+- Install the Unity Package version of the exporter from this here: [Exporter Unity Package](https://github.com/ilodev/StationeersModsExport.git)
 - Check that a `StationeersMods` menu has appeared in the Unity editor.
+
+### Additional files
+
+Every Stationeers mod requires a few files created in:
+ - Assets/Gamedata
+ - Assets/About
+
+Follow Stationeers Mod and Steam Mod guidelines to create these files.
 
 ### The Export Window
 
