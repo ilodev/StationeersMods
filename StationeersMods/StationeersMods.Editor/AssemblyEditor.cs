@@ -13,7 +13,7 @@ namespace StationeersMods.Editor
         /// <summary>
         /// Cached list of candidate Assembly Definitions found
         /// </summary>
-        List <string> _candidatesCache = new List<string>();
+        List <string> _candidatesCache = null;
         
         public override void DrawHelpBox()
         {
